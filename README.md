@@ -13,7 +13,10 @@ A full-featured Project Management Dashboard built with React, Context API, and 
 
 ## 📸 Screenshots
 
-> Add screenshots or a screen recording GIF here after completing the project.
+![Project Screenshot - 1](./src/Images/screenshot1.png)
+![Project Screenshot - 2](./src/Images/screenshot2.png)
+![Project Screenshot - 3](./src/Images/screenshot3.png)
+
 
 ---
 
@@ -175,17 +178,12 @@ To build the project for production:
 npm run build
 ```
 
-You can then deploy the `build/` folder to:
-- [Netlify](https://netlify.com) – drag and drop the build folder
-- [Vercel](https://vercel.com) – connect your GitHub repo
-- [GitHub Pages](https://pages.github.com)
-
 ---
 
 ## 👨‍💻 Author
 
-- **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+- **Arunthathi**
+- GitHub: [@Arunthathi1705](https://github.com/Arunthathi1705)
 
 ---
 
