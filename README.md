@@ -1,70 +1,194 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📋 Project Management Dashboard
 
-## Available Scripts
+A full-featured Project Management Dashboard built with React, Context API, and Mantine UI. Manage employees, projects, and tasks with a visual Kanban board and drag-and-drop support.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Add your deployed link here (e.g., Netlify / Vercel)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📸 Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Add screenshots or a screen recording GIF here after completing the project.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Employee Management** – Add, view, edit, and delete employees with profile images
+- **Project Management** – Create projects, assign employees, set start/end dates
+- **Task Management** – Create tasks linked to projects, assign to project employees
+- **Kanban Dashboard** – Drag and drop tasks across 5 status columns
+- **Filter by Project** – View tasks for a specific project on the dashboard
+- **Form Validation** – All fields validated using React Hook Form + Yup
+- **Data Persistence** – All data saved to localStorage (survives page refresh)
+- **Responsive UI** – Works on desktop and tablet screens
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Technology | Purpose |
+|---|---|
+| React (CRA) | Frontend framework |
+| React Router DOM v7 | Page routing |
+| Context API | Global state management |
+| Mantine UI v7 | UI component library |
+| React Hook Form | Form handling |
+| Yup | Form validation |
+| @hello-pangea/dnd | Drag and drop |
+| uuid v9 | Unique ID generation |
+| dayjs | Date handling |
+| localStorage | Data persistence |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── context/
+│   └── AppContext.jsx        # Global state (employees, projects, tasks)
+├── components/
+│   ├── Navbar.jsx            # Top navigation bar
+│   ├── EmployeeForm.jsx      # Add/Edit employee modal form
+│   ├── ProjectForm.jsx       # Add/Edit project modal form
+│   ├── TaskForm.jsx          # Add/Edit task modal form
+│   └── TaskCard.jsx          # Draggable task card for Kanban board
+├── pages/
+│   ├── Dashboard.jsx         # Kanban board with drag and drop
+│   ├── Employees.jsx         # Employee list and CRUD
+│   ├── Projects.jsx          # Project list and CRUD
+│   ├── ProjectDetail.jsx     # Single project detail view
+│   └── Tasks.jsx             # Task list and CRUD
+├── App.js                    # Route definitions
+└── index.js                  # App entry point with MantineProvider
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Setup and Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+Make sure you have the following installed on your machine:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Node.js](https://nodejs.org/) (v16 or above)
+- npm (comes with Node.js)
 
-### Analyzing the Bundle Size
+### Step 1 – Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/your-username/project-management-dashboard.git
+cd project-management-dashboard
+```
 
-### Making a Progressive Web App
+### Step 2 – Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+### Step 3 – Start the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+The app will open at **http://localhost:3000**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📦 All Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install @mantine/core@7 @mantine/hooks@7 @mantine/dates@7
+npm install react-router-dom
+npm install react-hook-form yup @hookform/resolvers
+npm install @hello-pangea/dnd
+npm install uuid@9 dayjs
+```
+
+---
+
+## 📖 How to Use the App
+
+### 1. Add Employees First
+- Go to the **Employees** page
+- Click **+ Add Employee**
+- Fill in name, position, email, and upload a profile image
+- Click **Add Employee**
+
+### 2. Create a Project
+- Go to the **Projects** page
+- Click **+ Add Project**
+- Fill in title, description, logo, start date, and end date
+- Check the employees you want to assign to this project
+- Click **Add Project**
+
+### 3. Create Tasks
+- Go to the **Tasks** page
+- Click **+ Add Task**
+- Select a project first, then select an employee (only project employees appear)
+- Fill in title, description, ETA, status, and optional reference images
+- Click **Add Task**
+
+### 4. Use the Dashboard
+- Go to the **Dashboard** page
+- See all tasks across 5 columns: Need to Do, In Progress, Need for Test, Completed, Re-open
+- **Drag and drop** any task card to a different column to update its status
+- Use the **dropdown** at the top right to filter tasks by project
+
+---
+
+## ✅ Validation Rules
+
+- All fields are **mandatory**
+- Email must be **valid format** and **unique** across all employees
+- Project **start date must be before end date**
+- When creating a task, only employees **assigned to that project** can be selected
+- Profile image and project logo are **required**
+
+---
+
+## 🗂️ Pages Overview
+
+| Page | Route | Description |
+|---|---|---|
+| Dashboard | `/` | Kanban board with drag and drop |
+| Employees | `/employees` | View, add, edit, delete employees |
+| Projects | `/projects` | View, add, edit, delete projects |
+| Project Detail | `/projects/:id` | View single project with its employees and tasks |
+| Tasks | `/tasks` | View, add, edit, delete tasks |
+
+---
+
+## 🌐 Deployment
+
+To build the project for production:
+
+```bash
+npm run build
+```
+
+You can then deploy the `build/` folder to:
+- [Netlify](https://netlify.com) – drag and drop the build folder
+- [Vercel](https://vercel.com) – connect your GitHub repo
+- [GitHub Pages](https://pages.github.com)
+
+---
+
+## 👨‍💻 Author
+
+- **Your Name**
+- GitHub: [@your-username](https://github.com/your-username)
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
