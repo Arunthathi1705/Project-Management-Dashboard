@@ -7,7 +7,7 @@ A full-featured Project Management Dashboard built with React, Context API, and 
 
 ## 🚀 Live Demo
 
-> Add your deployed link here (e.g., Netlify / Vercel)
+[>Deployed link](https://project-dashboard-website.netlify.app/)
 
 ---
 
